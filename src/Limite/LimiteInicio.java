@@ -9,7 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class LimiteConsultarLoja extends JPanel {
+public class LimiteInicio extends JPanel {
       
     JLabel labelEndereco = new JLabel("Endereco");
     JLabel labelCidade = new JLabel("Cidade");
@@ -26,7 +26,7 @@ public class LimiteConsultarLoja extends JPanel {
     JButton btnConsultar = new JButton("Consultar");
     JButton botaoLimpar = new JButton("Limpar");
     
-    public LimiteConsultarLoja() {
+    public LimiteInicio() {
         
         setLayout(new GridBagLayout());
         setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.blue), "Consultar Loja"));

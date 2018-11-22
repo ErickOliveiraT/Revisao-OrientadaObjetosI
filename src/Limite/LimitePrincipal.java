@@ -14,7 +14,10 @@ import revisao.Revisao;
 import Controle.ControleCarro;
 import Controle.ControleMoto;
 import Controle.ControleLoja;
+import java.awt.Component;
+import java.awt.Window;
 import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
 
 public class LimitePrincipal {
     
@@ -44,17 +47,24 @@ public class LimitePrincipal {
         
         //Reconstrução do frame ao usar o MenuBar
         menuCadLoja.addActionListener((ActionEvent ae) -> {
-            System.out.println("Clicou no cad loja");
+            Component comp = SwingUtilities.getRoot(this.frame);
+            ((Window) comp).dispose();
+            LimitePrincipal lm = new LimitePrincipal(2);
         });
         menuConsLoja.addActionListener((ActionEvent ae) -> {
-            System.out.println("Clicou no consultar loja"); 
+            Component comp = SwingUtilities.getRoot(this.frame);
+            ((Window) comp).dispose();
+            LimitePrincipal lm = new LimitePrincipal(4);
         });
         menuCadVeiculo.addActionListener((ActionEvent ae) -> {
-            //(1);
-            System.out.println("Clicou no cad veículo"); 
+            Component comp = SwingUtilities.getRoot(this.frame);
+            ((Window) comp).dispose();
+            LimitePrincipal lm = new LimitePrincipal(1);
         });
         menuConsVeiculo.addActionListener((ActionEvent ae) -> {
-            System.out.println("Clicou no consultar veículo"); 
+            Component comp = SwingUtilities.getRoot(this.frame);
+            ((Window) comp).dispose();
+            LimitePrincipal lm = new LimitePrincipal(3);
         });
         
         //Tratando botões de cadastrar

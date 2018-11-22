@@ -1,6 +1,8 @@
 package Entidade;
 
-public class Carro extends Veiculo{
+import java.io.Serializable;
+
+public class Carro extends Veiculo {
     int HP;
     int qtdPessoas;
     double tamPortaMalas;
